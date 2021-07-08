@@ -34,38 +34,40 @@ const Start = (props) =>{
     return (
         <div className={styles.container}>
             <h1>Mafia</h1>
-            <span className={styles.roleName}>Mafia</span>
-            <div className={styles.count}>
-
-                <span className={'u-cursor--pointer'} onClick={()=>{setMafiaCount(prev=>+prev-1)}}><MinusSVG /></span>
+            <div className={styles.setingsGame}>
+                <span className={styles.roleName}>Mafia</span>
+                <div className={styles.count}>
+                    <span className={'u-cursor--pointer'} onClick={()=>{setMafiaCount(prev=>+prev-1)}}><MinusSVG /></span>
                     <input type='number' value={mafiaCount} onChange={(e)=>{setMafiaCount(e.target.value)}}/>
-                <span className={'u-cursor--pointer'} onClick={()=>{setMafiaCount(prev=>+prev+1)}}><PlusSVG /></span>
-            </div>
-            <span className={styles.roleName}>Peaceful citizen</span>
-            <div className={styles.count}>
-                <span className={'u-cursor--pointer'} onClick={()=>{setPeacefulCount(prev=>+prev-1)}}><MinusSVG /></span>
+                    <span className={'u-cursor--pointer'} onClick={()=>{setMafiaCount(prev=>+prev+1)}}><PlusSVG /></span>
+                </div>
+                <span className={styles.roleName}>Peaceful citizen</span>
+                <div className={styles.count}>
+                    <span className={'u-cursor--pointer'} onClick={()=>{setPeacefulCount(prev=>+prev-1)}}><MinusSVG /></span>
                     <input type='number' value={peacefulCount} onChange={(e)=>{setPeacefulCount(e.target.value)}}/>
-                <span className={'u-cursor--pointer'} onClick={()=>{setPeacefulCount(prev=>+prev+1)}}><PlusSVG /></span>
+                    <span className={'u-cursor--pointer'} onClick={()=>{setPeacefulCount(prev=>+prev+1)}}><PlusSVG /></span>
+                </div>
+                <div className={styles.specialRoles}>
+                    <label>
+                        Don
+                        <input
+                            type="checkbox"
+                            checked={don}
+                            onChange={(e)=>{setDon(e.target.checked)}}
+                        />
+                    </label>
+                    <label>
+                        Sheriff
+                        <input
+                            type="checkbox"
+                            checked={sheriff}
+                            onChange={(e)=>{setSheriff(e.target.checked)}}
+                        />
+                    </label>
+                </div>
+                <Button onClick={()=>{createRol()}}> GO </Button>
             </div>
-            <div>
-                <label>
-                    Don
-                    <input
-                        type="checkbox"
-                        checked={don}
-                        onChange={(e)=>{setDon(e.target.checked)}}
-                    />
-                </label>
-                <label>
-                    Sheriff
-                    <input
-                        type="checkbox"
-                        checked={sheriff}
-                        onChange={(e)=>{setSheriff(e.target.checked)}}
-                    />
-                </label>
-            </div>
-            <Button onClick={()=>{createRol()}}> GO </Button>
+
         </div>
     )
 }

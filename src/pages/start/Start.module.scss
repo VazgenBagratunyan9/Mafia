@@ -6,43 +6,76 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   @media only screen and (min-width: 600px) {
     max-width: 480px;
   }
-  .count{
+  h1{
+    color: rgba(231, 48, 48, 0.58);
+  }
+  .setingsGame{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 40px;
-    width: 50%;
-    font-size: 32px;
-    input{
-      width: 30%;
-      color: white;
-      text-align: center;
-      &:focus{
-        outline: none;
-      }
-      //margin: 0 30px;
-      //padding: 0 20px;
-    }
-    span{
-      padding: 5px 10px;
-      display: flex;
-      background: white;
-      color: black;
+    align-items: center;
+    .roleName{
+      font-weight: bolder;
       font-size: 18px;
-      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .count{
+      display: flex;
       justify-content: center;
-      align-items: center;
-      //width: 30px;
-      border: 1px solid white;
-      border-radius: 5px;
-      svg{
-        width: 20px;
-        height: 20px;
+      margin-bottom: 40px;
+      width: 50%;
+      font-size: 32px;
+
+      input{
+        width: 30%;
+        color: white;
+        text-align: center;
+        &:focus{
+          outline: none;
+        }
+        //margin: 0 30px;
+        //padding: 0 20px;
       }
+      span{
+        padding: 5px 10px;
+        display: flex;
+        background: white;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        //width: 30px;
+        border: 1px solid white;
+        border-radius: 5px;
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .specialRoles{
+      display: flex;
+      label{
+
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        input{
+          font-size: 18px;
+
+          width: 20px;
+          height: 20px;
+          margin-left: 5px;
+        }
+      }
+
     }
   }
+
 }
