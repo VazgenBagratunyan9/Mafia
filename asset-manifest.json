@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Mafia/static/css/main.f855aa56.chunk.css",
+    "main.css": "/Mafia/static/css/main.18028e38.chunk.css",
     "main.js": "/Mafia/static/js/main.5c5c3832.chunk.js",
     "main.js.map": "/Mafia/static/js/main.5c5c3832.chunk.js.map",
     "runtime-main.js": "/Mafia/static/js/runtime-main.4bbf753d.js",
@@ -8,7 +8,7 @@
     "static/js/2.cf792bc5.chunk.js": "/Mafia/static/js/2.cf792bc5.chunk.js",
     "static/js/2.cf792bc5.chunk.js.map": "/Mafia/static/js/2.cf792bc5.chunk.js.map",
     "index.html": "/Mafia/index.html",
-    "static/css/main.f855aa56.chunk.css.map": "/Mafia/static/css/main.f855aa56.chunk.css.map",
+    "static/css/main.18028e38.chunk.css.map": "/Mafia/static/css/main.18028e38.chunk.css.map",
     "static/js/2.cf792bc5.chunk.js.LICENSE.txt": "/Mafia/static/js/2.cf792bc5.chunk.js.LICENSE.txt",
     "static/media/MinusSVG.088c3818.svg": "/Mafia/static/media/MinusSVG.088c3818.svg",
     "static/media/PlusSVG.c6f2e133.svg": "/Mafia/static/media/PlusSVG.c6f2e133.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.4bbf753d.js",
     "static/js/2.cf792bc5.chunk.js",
-    "static/css/main.f855aa56.chunk.css",
+    "static/css/main.18028e38.chunk.css",
     "static/js/main.5c5c3832.chunk.js"
   ]
 }
