@@ -8,11 +8,15 @@ import Players from "../pages/players/Players.page";
 import Loader from "../components/loader/Loader.component";
 const  App = (props)=> {
     const [load,setLoad] = useState(true)
-    console.log(props)
+    const [toPlayer,setToPlayer] = useState(false)
+    const [toStart,setToStart] = useState(true)
+
     const {rol} = props
+
     const loaderChange = ()=>{
         setLoad(false)
     }
+
     useEffect(()=>{
         const stop =  setTimeout(()=>{setLoad(false)},2000)
 
@@ -22,14 +26,19 @@ const  App = (props)=> {
             clearTimeout(stop)
         }
     },[])
+
+    useEffect(()=>{
+        if(!!rol.length){
+            setToPlayer(true)
+            setToStart(false)
+        }
+
+    },[rol])
     console.log(load)
   return (
-      load?
-          <Loader />
-          :
     <div className={styles.app}>
-        {!rol.length && <Start />}
-        {!!rol.length &&  <Players />}
+        {toStart && <Start />}
+        {toPlayer &&  <Players />}
         {/*<div>*/}
         {/*    <Players />*/}
         {/*</div>*/}

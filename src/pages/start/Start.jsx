@@ -12,8 +12,8 @@ import {ReactComponent as MinusSVG} from 'src/assets/MinusSVG.svg'
 
 const Start = (props) =>{
 
-    const [mafiaCount,setMafiaCount] = useState(12)
-    const [peacefulCount,setPeacefulCount] = useState(12)
+    const [mafiaCount,setMafiaCount] = useState(3)
+    const [peacefulCount,setPeacefulCount] = useState(9)
     const [don,setDon]= useState(true)
     const [sheriff,setSheriff]= useState(true)
 
