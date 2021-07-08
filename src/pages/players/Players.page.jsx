@@ -16,18 +16,17 @@ const Players = (props)=>{
     }
     return(
         <div className={styles.container}>
-            <div>
-                <label>
+            <h1>Mafia</h1>
+            <div className={styles.player}>
                     Player
                     <Input
                         value={player}
                         onChange={(e)=>setPlayer(e.target.value)}
                     />
-                    <div>
-                        Rol:{playerRol}
+                    <div className={styles.userRol}>
+                        Rol:{!!playerRol && <span className={styles.rol}>{playerRol}</span>}
                     </div>
                     <Button onClick={()=>{createRol()}}>GO</Button>
-                </label>
             </div>
         </div>
     )
