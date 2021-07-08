@@ -6,15 +6,15 @@ export const addRolUtil = (seting)=>{
     for(let i = 0 ; i < count ; i++){
         if(i < mafiaCount){
             if(don && i === mafiaCount -1){
-                rol.push('don')
+                rol.push('Don')
             }else{
-                rol.push('mafia')
+                rol.push('Mafia')
             }
         }else{
             if(sheriff && i === count -1){
-                rol.push('sheriff')
+                rol.push('Sheriff')
             }else{
-                rol.push('Peaceful citizen')
+                rol.push('Citizen')
             }
         }
 
@@ -31,12 +31,12 @@ export const createRolPlayerUtil = (rols,players,playerSeting)=>{
     const {idx,player} = playerSeting
     console.log(copyRols,copyPlayers,playerSeting)
     if(copyRols.length > 0){
-        copyPlayers.push({rol:copyRols[idx],player:player})
+        copyPlayers.push({role:copyRols[idx],player:player})
     }
     copyRols.splice(idx,1)
 
     return {
         rols:copyRols,
-        players:copyPlayers
+        players:copyPlayers,
     }
 }

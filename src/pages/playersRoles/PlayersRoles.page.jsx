@@ -1,5 +1,5 @@
 import {useState} from "react";
-import styles from './Players.module.scss'
+import styles from './PlayersRoles.module.scss'
 import {addRol, createRolPlayer,create} from '../../redux/players/players.action'
 import {connect} from 'react-redux'
 import Input from "../../components/input/Input.component";

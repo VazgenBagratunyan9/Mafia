@@ -3,17 +3,16 @@ import {addRolUtil,createRolPlayerUtil} from "./players.utils";
 
 const initialState = {
     rols:[],
-    players:[]
+    players:[],
+    count:0
 }
 
 const playerReducer = (state = initialState, {type,payload})=>{
     switch (type){
         case types.ADD_ROL:
-            return {...state,rols:addRolUtil(payload)}
+            return {...state,rols:addRolUtil(payload),count: state.rols.length}
         case types.CREATE_ROL_PLAYER:
-             return createRolPlayerUtil(state.rols,state.players,payload);
-        case types.CREATE:
-                alert('bay;us')
+             return {...state,...createRolPlayerUtil(state.rols,state.players,payload)};
         default:
             return state
     }

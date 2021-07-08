@@ -41,7 +41,7 @@ const Start = (props) =>{
                     <input type='number' value={mafiaCount} onChange={(e)=>{setMafiaCount(e.target.value)}}/>
                     <span className={'u-cursor--pointer'} onClick={()=>{setMafiaCount(prev=>+prev+1)}}><PlusSVG /></span>
                 </div>
-                <span className={styles.roleName}>Peaceful citizen</span>
+                <span className={styles.roleName}>Citizen</span>
                 <div className={styles.count}>
                     <span className={'u-cursor--pointer'} onClick={()=>{setPeacefulCount(prev=>+prev-1)}}><MinusSVG /></span>
                     <input type='number' value={peacefulCount} onChange={(e)=>{setPeacefulCount(e.target.value)}}/>
