@@ -14,7 +14,7 @@ export const addRolUtil = (seting)=>{
             if(sheriff && i === count -1){
                 rol.push('sheriff')
             }else{
-                rol.push('peaceful')
+                rol.push('Peaceful citizen')
             }
         }
 
